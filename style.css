@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(img/capa02.jpg);
     background-size: cover;
@@ -11,42 +11,79 @@ body{
     justify-content: center;
 }
 
-.container{
-    background-color:black;
+.container {
+    background: linear-gradient(135deg, #000000, #2c2c2c, #4b4b4b);
     border-radius: 10px;
-    border: 3px solid #0078D4;
+    border: 3px solid white;
     padding: 20px;
     text-align: center;
     width: 300px;
     max-width: 80%; 
-    
+    position: relative; /* Adicionado para posicionar o botão */
 }
 
-.profile{
+#language-toggle {
+    position: absolute; /* Para posicionar no canto superior direito */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    padding: 5px 10px; /* Ajuste o preenchimento conforme necessário */
+    border: none;
+    background-color: transparent; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    cursor: pointer;
+    border-radius: 5px; /* Arredondar bordas */
+}
+
+#language-toggle:hover {
+    background-color: white; /* Cor do botão ao passar o mouse */
+}
+
+.profile {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #0078D4;
-    
+    border: 3px solid white;
+    margin: 20px 0; /* Espaço entre a imagem e o nome */
 }
 
-.sub-title{
+.sub-title {
     margin-bottom: 25px;
 }
 
-.link{
+.link {
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 30px;
-    border-radius: 10px;
+    padding: 10px 30px;
     margin: 20px 0;
     text-decoration: none;
-    background-color: #121212;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1c1c1c, #121212);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-    p{
-        color: white;
-    }
+.link p {
+    color: white;
+    margin-left: 10px; /* Ajusta o espaçamento entre o ícone e o texto */
+    font-size: 18px;
+}
+
+/* Efeito hover */
+.link:hover {
+    transform: scale(1.05); /* Leve aumento de tamanho */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); /* Aumenta a sombra */
+}
+
+/* Efeito hover no texto */
+.link p:hover {
+    color: #dcdcdc; /* Tom mais claro no texto ao passar o mouse */
+}
+
+/* Ajuste no ícone */
+.link img {
+    height: 40px;
+    width: 40px;
 }
