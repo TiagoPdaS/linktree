@@ -22,6 +22,18 @@ body {
     position: relative; /* Adicionado para posicionar o botão */
 }
 
+h1{
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+
 #language-toggle {
     position: absolute; /* Para posicionar no canto superior direito */
     top: 10px; /* Distância do topo */
