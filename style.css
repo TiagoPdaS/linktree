@@ -87,6 +87,7 @@ h2{
 .link:hover {
     transform: scale(1.05); /* Leve aumento de tamanho */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); /* Aumenta a sombra */
+    border-color: white;
 }
 
 /* Efeito hover no texto */
